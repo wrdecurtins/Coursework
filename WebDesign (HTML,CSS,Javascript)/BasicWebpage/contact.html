@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DeCurtins - Lab 5 - Contact</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="slicknav.css" href="styles/slicknav.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#horiz-nav").slicknav({ prependTo:"#mobile_menu"});
+        });
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <img src="images/cat.jpg" width="200" height="100" alt= "A very cute cat">
+        <h1>Contact Me</h1>
+        <h2>Send me and Email and we can be friends!</h2>
+    </header>
+
+    <nav id="mobile_menu"></nav>
+    <nav id="horiz-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="favorites.html">Favorite Games</a></li>
+            <li><a href="music.html">Music</a></li>
+            <li><a href="contact.html" class="current">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <form action="confirm.html" id="email_form" name="email_form" method="get">
+                <h2>Email Me!</h2>
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname" autofocus required>
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname" required>
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" required>
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" name="phone" required
+                        placeholder="ex: 302-444-5566"
+                        pattern="([0-9]{3}-){2}[0-9]{4}"
+                        title="Must be in the form ###-###-####">
+                <input type="submit" id="submit" name="submit" value="Send Email">
+
+            </form>
+        </section>
+
+        <aside>
+            <nav id="vert-nav">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/william-decurtins/">Linkedin</a></li>
+                    <li><a href="https://www.facebook.com/william.decurtins">Facebook</a></li>
+                    <li><a href="https://twitter.com/WilliamDeCurti1">Twitter</a></li>
+                    <li><a href="https://docs.google.com/document/d/15RhIp15B16zGrdG8wPTR-DTHMi0HIaSiasGADasWlB8/edit?usp=sharing">Resume</a></li>
+                </ul>
+            </nav>
+        </aside>
+    </main>
+
+    <footer>
+        <p>
+            &copy; 2020 William DeCurtins
+        </p>
+    </footer>
+
+</body>
+</html>

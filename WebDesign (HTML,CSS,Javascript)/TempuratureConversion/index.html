@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DeCurtins - Lab 8</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+
+    <main class="col-lg-6 mx-auto text-center border border-secondary">
+        <h1>Convert Temperature</h1>
+        <hr>
+        <div class="custom-control custom-radio">
+            <input type="radio" name="temperature-conversion" id="to-celsius" value="convert-to-celsius"
+                   class="custom-control-input">
+            <label for="to-celsius" class="custom-control-label">Fahrenheit to Celsius</label>
+        </div>
+        <div class="custom-control custom-radio">
+            <input type="radio" name="temperature-conversion" id="to-fahrenheit" value="convert-to-fahrenheit"
+                   class="custom-control-input">
+            <label for="to-fahrenheit" class="custom-control-label">Celsius to Fahrenheit</label>
+        </div>
+        <div class="mx-auto w-50 mt-3">
+            <div class="form-group">
+                <label id="temperature-top-label" for="temperature-entered">Enter temperature in Fahrenheit:</label>
+                <input type="text" name="temperature-entered" id="temperature-entered"
+                    class="form-control text-center">
+                <small id="validation-message" class="text-danger font-weight-bold"></small>
+            </div>
+            <div class="form-group">
+                <label id="temperature-bottom-label" for="converted-temperature">Temperature converted to Celsius:</label>
+                <input type="text" name="converted-temperature" id="converted-temperature"
+                       class="form-control text-center" disabled>
+            </div>
+            <div class="form-group">
+                <input type="button" class="btn btn-secondary w-100 mb-1" id="convert" value="Convert Temperature">
+                <br>
+                <input type="button" class="btn btn-secondary w-100" id="clear-entries" value="Clear">
+            </div>
+        </div>
+    </main>
+
+<script src="jquery-3.5.1.min.js"></script>
+<script src="decurtins-lab-8.js"></script>
+</body>
+</html>

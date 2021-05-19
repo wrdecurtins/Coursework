@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DeCurtins Lab 12 - Saved Profile</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+<main class="col-sm-6 mx-auto text-center mt-3 border border-success" id="profile-main">
+    <h1>Saved Account Profile Information</h1>
+    <hr>
+    <script>
+        // set a local instance of the session array and divide elements by pipe |
+        const strings = sessionStorage.lab12info.split('|');
+
+        // remove the last entry of the array
+        strings.pop();
+
+        // begin the dl with doc write
+        document.write(`<dl>`);
+
+        // display the list of profile data
+        for (let i in strings) {
+            // divide the values from their attribute names in the array
+            let elements = strings[i].split('=');
+            // remove hyphens from strings and replace them with spaces
+            let field = elements[0].replaceAll('-', ' ');
+            // grab the user input from the array
+            let value = elements[1];
+
+            // create a dt for the value type, capitalize and add a colon to the end
+            document.write(`<dt style="text-transform: capitalize">${field}:</dt>`);
+            // create a dd for the user inputted value
+            document.write(`<dd>${value}</dd>`);
+        }
+        // end the dl with doc write
+        document.write(`</dl>`);
+    </script>
+</main>
+</body>
+</html>

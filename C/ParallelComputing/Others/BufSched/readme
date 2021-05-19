@@ -1,0 +1,23 @@
+
+
+origbuffsched.c
+	- a partially complete solution
+	- we'll understand & debug it
+
+seq.c
+	- the version after we fix the above code
+	- sequential solution to illustrate
+
+ptbase
+	- a list of PThread operations & functions
+
+buffsched.c
+	- a pthread solution
+
+opmbuf.c
+	- a broken OpenMP solution
+
+dynomp.c
+	- a better OpenMP solution
+
+

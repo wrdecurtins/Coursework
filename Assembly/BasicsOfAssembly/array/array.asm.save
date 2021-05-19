@@ -1,0 +1,38 @@
+%include "/usr/local/share/csc314/asm_io.inc"
+
+
+segment .data
+
+	srcbuff		db		"Hello world",0
+
+segment .bss
+
+	dstbuff		resb		12
+
+segment .text
+	global  asm_main
+
+asm_main:
+	push	ebp
+	mov		ebp, esp
+	; ********** CODE STARTS HERE **********
+
+	cld
+	mov		esi, srcbuff
+	mov		edi, dstbuff
+	top_loop:
+;		lodsb
+;		stosb
+		movsb
+	cmp		al, 0
+	jne		top_loop
+
+	mov		eax, dstbuff
+	call	print_string
+	call	print_nl
+
+	; *********** CODE ENDS HERE ***********
+	mov		eax, 0
+	mov		esp, ebp
+	pop		ebp
+	ret

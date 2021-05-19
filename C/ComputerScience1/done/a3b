@@ -1,0 +1,73 @@
+/*
+Read a text file line by line. Compute & track some
+  statistics about the file.  Output to screen.
+Command line:  input file name
+Implementation details:   
+  - lines will be less than 100 chars
+  - line numbers start at 1
+Output - to screen:
+  Longest line   [ line number & text ]
+  Shortest line  [ line number & text ]
+  Most uppercase [ line number & how many ]
+  Most digits    [ line number & how many ]
+/*
+/*
+/*
+/*
+Read a text file line by line.    Compute & track some
+  statistics about the file.  Output to screen.
+Command line:  input file name
+Implementation details:   
+  - lines will be LESS than 100 chars
+  - line numbers start at 1
+Output - to screen:
+  Longest line   [ line number & text ]
+  Shortest line  [ line number & text ]
+  Most uppercase [ line number & how many ]
+  Most digits    [ line number & how many ]
+Read a text file line by line.  Compute & track some
+  statistics about the file.  Output to screen.
+Command line:  input file name
+Implementation details:   
+  - lines will be less than 100 chars
+  - line numbers start at 1
+Output - to screen:
+  Longest line   [ line number & text ]
+  Shortest line  [ line number & text ]
+  Most uppercase [ line number & how many ]
+  Most digits    [ line number & how many ]
+Read a text file line by line.  Compute & track some
+  statistics about the file.  Output to screen.
+Command line:  input file name
+Implementation details:   
+  - lines will be less than 100 chars
+  - line numbers start at 1
+-
+Output - to screen:
+  Longest line   [ line number & text ]
+  Shortest line  [ line number & text ]
+  Most uppercase [ line number & how many ]
+  Most digits    [ line number & how many ]
+Read a text file line by line.  Compute & track some
+  statistics about the file.  Output to screen.
+Command line:  input file name
+Implementation details:   
+  - lines wi11 be 1ess than 100 chars
+  - line numbers start at 1
+Output - to screen:
+  Longest line   [ line number & text ]
+  Shortest line  [ line number & text ]
+  Most uppercase [ line number & how many ]
+  Most digits    [ line number & how many ]
+Read a text file line by line.  Compute & track some
+  statistics about the file.  Output to screen.
+Command line:  input file name
+Implementation details:   
+  - lines will be less than 100 chars
+  - line numbers start at 1
+Output - to screen:
+  Longest line   [ line number & text ]
+  Shortest line  [ line number & text ]
+  Most uppercase [ line number & how many ]
+  Most digits    [ line number & how many ]
+* /

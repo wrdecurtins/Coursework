@@ -1,0 +1,27 @@
+Fall 2018:  Short Assignment #1
+
+Due:  Tuesday 8am
+ - submit 5 functions to quiz   Short1
+ - function requirements explained in class
+
+ int twice( int x );
+
+doubles the int passed to it
+
+int square( int x );
+
+squares the int passed to it
+
+     void countUp( int start, int end );
+
+pass it 3 and 5
+3 4 5
+
+   void countDown( int start, int end );
+
+pass it 5 and 3
+5 4 3
+
+void countBetween( int start, int end );
+
+calls the countUp and countDown functions based on nums passed

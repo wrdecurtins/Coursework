@@ -1,0 +1,75 @@
+cs.dsunix.net
+Username: h760
+default password: eclipse17
+newpass hint:WD7
+
+% cp file1 file2  <-- copy file1 into file2 (% cp file1 . <-- keeps same name)
+% mv file1 file2  <-- rename file1 to file2
+% rm file1	  <-- Delete file1
+% rmdir dir1	  <-- Delete dir1
+
+% mkdir dir1      <-- make directory
+% nano prog1      <-- opens or creates a file in nano
+% pwd		  <-- Present Working Directory (shows complete file path to your location)
+
+programming steps
+
+% nano prog.c     <-- opens or creates c program
+% gcc prog.c	  <-- syntax checker for c program
+% ./prog.c 	  <-- exicute prog.c
+% \n		  <-- "go to next line"
+% //Comment	  <-- this is how to comment in c
+% scanf("%d", &var); <-- ask user for input and store it into variable "var"
+
+Variable types
+
+% int var1; 	  <-- create integer (no decimals) variable
+% float var1;	  <-- actual number value (fractions and decimals) (when using %f use %.2f to restrict digit size after the decimal by the number after the .)
+
+Programming C skeleton:
+ #include <stdio.h>
+
+int main()
+{
+		  <-- Code
+	return 0; <-- Stops program
+}
+
+.nanorc Configurations:
+
+set smooth
+
+set tabsize 4     <-- amount of spaces in a tab 
+
+set const
+
+Conditional operators:
+
+>	greater
+>=	greater or equal
+<	less
+<=	less or equal
+==	equal
+!=	not equal
+
+Logical operators
+&&	AND	(And has prescidence over Or)
+||	Or
+ !	NOT
+
+Loops
+for
+while
+do
+
+while ( cond )
+{
+	body;
+	s2;
+}
+
+for ( n = 1; n <= 5; n = n + 1 )
+{
+	body;
+	s2
+}

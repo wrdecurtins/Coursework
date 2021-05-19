@@ -1,0 +1,117 @@
+
+CSC 250  Computer Science II
+
+Day 5:   [  8 ] Thurs 1/18/18
+         [8,10] Fri   1/19/18
+
+Upcoming Events:
+   Soon we'll have some company info sessions
+   Lots of on-campus interviews too
+
+Help Night
+  Monday & Wednesday   4:15-6:00   EH 105
+
+Computer Club
+ Monday     General      6:00  EH 100
+ Tuesday    Defensive    6:00  EH 100
+ Wednesday  Offensive    6:00  EH 100
+ Thursday   Programming  5:30  EH 105 
+
+
+
+
+
+String & array review:
+We are moving on to some STRING functions
+ - string is just an array of characters in C
+ - terminated with  '\0' character
+ 
+<string.h> contains a number of useful functions
+
+
+
+After we review the assignment we'll write code together
+
+
+
+Assignment: Friday 6pm
+  
+Program :::  Have this done by 6pm on Friday
+Make use of functions to provide structure
+  and minimize redundant code
+
+Read 2 words from the user  [ less than 50 chars in length ]
+
+How many of the characters in Word1 are also in Word2?
+
+----------------------------------------------------------------
+----------------------------------------------------------------
+p0.c
+
+scanf() vs fgets()
+
+char txt[20];
+
+scanf("%s", txt);
+fgets( txt, 20, stdin);
+
+
+----------------------------------------------------------------
+p1.c
+
+Declaration & Initialization
+
+char s1[10];
+char s2[10] = {'h','i'};
+char s3[10] = "hi";
+char s4[]   = "hi";
+
+
+----------------------------------------------------------------
+p2.c
+Printing string char by char
+
+----------------------------------------------------------------
+p3.c
+A few string samples
+
+strlen
+strcmp
+
+----------------------------------------------------------------
+p4.c
+A few string samples
+
+strcpy
+strcat
+
+----------------------------------------------------------------
+----------------------------------------------------------------
+/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+
+
+A few key principles...
+
+It works... does not imply goodness or correctness
+
+Bad planning results in bad code
+
+Sometimes you have to start over
+
+Program is just an expression of a solution
+
+
+
+Lower level reminders:
+- variables can be re-used
+- functions can call other functions
+- if you have a function for a task, use it
+- add a few comments to remind yourself what you are doing
+
+After it works, then worry about ways to make it work better.
+
+
+
+\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+----------------------------------------------------------------
+

@@ -1,0 +1,47 @@
+Assignment Instructions:
+
+Tic Tac Toe -- check for winner
+ - we are not playing the game
+
+Given a single board, determine if there is a winner
+ - if no winner, return 0
+
+ - if there is a winner return an integer code
+     21-28  x wins     31-38  o wins
+
+     n1 : top row
+     n2 : middle row
+     n3 : bottom row
+     n4 : left column 
+     n5 : middle column 
+     n6 : right column 
+     n7 : diagonal top left to bottom right 
+     n8 : diagonal top right to bottom left 
+
+
+Expected(required) steps to your soluions::
+
+function:
+	read a string from user - note that it may include spaces
+		- up to 9 characters, in row order from top
+		- each spot is either  'x'  or  'o'  or  ' '
+		- string maybe short if everything trailing is empty
+
+function:
+	store string representation in 2d array
+		- 2d array & string are parameters
+
+function:
+	print the 2d array as a grid
+		- pass 2d array to function
+
+function:
+	check board for win
+		- pass 2d array to function to check board
+		- return result code indicating where win was located
+
+
+Write the main() to make it all happen
+
+
+

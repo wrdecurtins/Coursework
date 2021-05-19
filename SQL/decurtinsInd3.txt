@@ -1,0 +1,82 @@
+/* Chapter 3.1 */
+
+SELECT CONCAT(last_name, ', ', first_name) AS full_name
+FROM customers
+WHERE LEFT(last_name, 1) >= 'M' AND LEFT(last_name, 1) <= 'Z'
+ORDER BY last_name ASC;
+
+/* Chapter 3.2 */
+
+SELECT order_id, order_date, ship_date
+FROM orders
+WHERE ship_date IS NULL;
+
+/* Chapter 4.1 */
+
+SELECT last_name, first_name, order_date, product_name, item_price, discount_amount, quantity
+FROM customers, orders, order_items, products;
+
+/* Chapter 4.2 */
+
+SELECT p1.product_name, p1.list_price
+FROM products p1, products p2
+WHERE p1.product_id <> p2.product_id
+  AND p1.list_price = p2.list_price
+ORDER BY p1.product_name;
+
+/* Chapter 5.1 */
+
+INSERT INTO products
+(category_id, product_code, product_name, description, list_price, discount_percent, date_added)
+VALUES
+(4, 'dgx_640', 'Yamaha DGX 640 88-Key Digital Piano', 'Long description to come', 799.99, 0, '2020-10-26 18:20');
+
+/* Chapter 5.2 */
+
+UPDATE products
+SET discount_percent = 35
+WHERE product_id = 11;
+
+/* Chapter 5.3 */
+
+DELETE FROM products
+WHERE category_id = 4;
+DELETE FROM categories
+WHERE category_id = 4;
+
+/* Chapter 6.1 */
+
+SELECT email_address as email, COUNT(DISTINCT i.order_id) as order_count, SUM(item_price) - SUM(discount_amount) as order_total
+FROM orders o, customers c, order_items i
+WHERE o.customer_id = c.customer_id AND o.order_id = i.order_id
+GROUP BY c.customer_id
+HAVING order_count > 1
+ORDER BY order_total DESC;
+
+/* Chapter 6.2 */
+
+SELECT email_address, COUNT(*) AS unique_products
+FROM customers c, orders o, order_items i
+WHERE c.customer_id = o.customer_id AND o.order_id = i.order_id 
+GROUP BY c.customer_id
+HAVING unique_products > 1
+ORDER BY email_address ASC;
+
+
+/* Chapter 7.1 */
+
+SELECT product_name, list_price
+FROM products
+WHERE list_price > ANY 
+( SELECT AVG(list_price)
+	FROM products)
+ORDER BY list_price DESC;
+
+/* Chapter 7.2 */
+
+SELECT email_address,
+	(SELECT MIN(order_date) FROM orders
+		WHERE orders.customer_id = customers.customer_id
+        ORDER BY order_id) AS earliest_purchase
+FROM customers
+ORDER BY earliest_purchase;

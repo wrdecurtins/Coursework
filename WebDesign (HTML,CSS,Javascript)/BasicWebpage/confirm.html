@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DeCurtins - Lab 5 - Survey</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="slicknav.css" href="styles/slicknav.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#horiz-nav").slicknav({ prependTo:"#mobile_menu"});
+        });
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <img src="images/cat.jpg" width="200" height="100" alt= "A very cute cat">
+        <h1>Take my Survey Please!</h1>
+        <h2>This page has not been made yet</h2>
+    </header>
+
+    <nav id="mobile_menu"></nav>
+    <nav id="horiz-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="favorites.html">Favorite Games</a></li>
+            <li><a href="music.html">Music</a></li>
+            <li><a href="contact.html" class="current">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Success!</h2>
+            <p>You successfully emailed me, I will reply as soon as I see it!</p>
+        </section>
+
+        <aside>
+            <nav id="vert-nav">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/william-decurtins/">Linkedin</a></li>
+                    <li><a href="https://www.facebook.com/william.decurtins">Facebook</a></li>
+                    <li><a href="https://twitter.com/WilliamDeCurti1">Twitter</a></li>
+                    <li><a href="https://docs.google.com/document/d/15RhIp15B16zGrdG8wPTR-DTHMi0HIaSiasGADasWlB8/edit?usp=sharing">Resume</a></li>
+                </ul>
+            </nav>
+        </aside>
+    </main>
+
+    <footer>
+        <p>
+            &copy; 2020 William DeCurtins
+        </p>
+    </footer>
+
+</body>
+</html>

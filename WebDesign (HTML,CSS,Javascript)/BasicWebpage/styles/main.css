@@ -1,0 +1,394 @@
+/*not really sure what this stuff is for yet*/
+html {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: lightseagreen;
+    margin: 0;                      /*set all margins to zero*/
+    padding: 0;                     /*set all padding to zero*/
+}
+
+/*Style for elements*/
+body {
+    background-color: white;
+    font-family: "Courier New", "Comic Sans MS", Arial; /*one of my favorite fonts and everybody's least favorite*/
+    font-size: 110%;            /*reading is hard so make the text a little bigger*/
+    margin-left: auto;          /* center the body*/
+    margin-right: auto;
+    margin-top: 10px;           /*make it not touch the top of browser*/
+    padding: 0px;               /*give those elements some space*/
+    width: 98%;               /*set the width to 98%*/
+    max-width: 960px;           /*set max width to 960px*/
+    border: 2px solid black;    /*create a border around the body*/
+    border-radius: 20px 20px 20px 20px;     /*round the border*/
+    box-shadow: 3px 3px 4px 4px;    /*give the border a shadow*/
+}
+
+/*label formatting*/
+label {
+    float: left;
+    clear: left;
+    width: 20%;
+    text-align: right;
+
+}
+
+/*input formatting*/
+input {
+    margin-left: 1em;
+    margin-bottom: .5em;
+    width: 50%;
+    float: left;
+    clear: right;
+}
+
+#submit {
+    margin-left: 22%;
+    width: 15%;
+    clear: left;
+    margin-top: 1.5%;
+    margin-bottom: 5%;
+    background-color: palegreen;
+    border: 2px solid black;
+    font-weight: bold;
+    font-size: .8em;
+
+}
+
+/*table formatting*/
+table {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+/*table head formatting*/
+thead {
+    font-weight: bold;
+    font-size: 1.25em;
+    background-color: palegreen;
+}
+
+/*table row and column formatting*/
+tr, th {
+    border: 2px solid black;
+    padding: .2em .6em .2em .6em;
+    text-align: center;
+}
+
+th:nth-child(4){
+    text-align: right;
+}
+
+#mobile_menu {
+    display: none;
+}
+
+/*main formatting*/
+main {
+    /*padding-left: 1.56%; /*15px / 960px*/
+    display: flex;
+}
+
+/*add padding to the paragraphs*/
+body p {
+    padding-left: 0px; /* 0px / 960px*/
+    margin-left: 10px;
+    padding-right: 1.56%; /* 15px / 960px*/
+}
+
+body h3 {
+    clear:both;
+}
+
+/*make the first letter of a main header 1.5x */
+main:first-child::first-letter{
+    font-size: 150%;
+}
+
+/*remove the underline from hyperlinks*/
+a {
+    text-decoration: none;
+}
+
+ol {
+    /*float: left;*/
+    margin-left: 10px;
+    /*clear: right;*/
+}
+
+#souls{
+    /*float: left;
+    clear: left;*/
+    width: 100%;
+    height: 30%;
+  /*  padding-right: 1.04%; /* 10px / 960px*/
+    /*margin: 0;*/
+}
+
+.table-figcap {
+    text-align: center;
+    font-weight: bold;
+    font-size: 150%;
+    padding-bottom: .25em;
+}
+
+.favfig {
+    float: right;
+    clear: right;
+    width: 40%;
+    margin: 0;
+    /*padding: .5em 0em 1em 1em;*/
+}
+
+.favfig figcaption {
+    font-weight: bold;
+    padding-top: .5em;
+    font-size: 90%;
+}
+
+section ol {
+    display: block;
+    float: left;
+    clear: left;
+    width: 48%;
+    font-size: 125%;
+    margin: 0;
+}
+
+ol li {
+    padding: 3% 0 0 0; /* 5px / 960px & 10px / 960px*/
+}
+
+/*aside formatting*/
+aside {
+   /* float: left;*/
+    /*clear: left;*/
+    flex-basis: 15%;
+    order: 1;
+    /*width: 15%;*/
+    min-width: 5%;
+    padding-right: 1%;
+}
+
+/*add border under nav menu*/
+#horiz-nav {
+    /*padding-bottom: 15px;        /*22px / 960px*/   /*add some padding so border isn't covered by list items*/
+    /*border-bottom: 2px solid black;*/
+}
+
+/*horizontal nav box current page link formatting*/
+#horiz-nav a.current {
+    font-style: italic; /*set the current link style to italic*/
+    color: crimson;     /*set the current link text color to crimson*/
+}
+
+/*horizontal nav box unorded list formatting*/
+#horiz-nav ul {
+    list-style-type: none;          /*set list style*/
+    text-align: center;             /*align text to center*/
+    margin: 0;                      /*no margins*/
+    padding: 0;                     /*no padding*/
+    border-bottom: 2px solid black; /*border on bottom*/
+    display: flex;
+    flex-basis: 100%;
+    justify-content: space-between;
+}
+
+/*horizontal nav box list item formatting*/
+#horiz-nav ul li {
+   /* float: left;                /*float list left*/
+    /*display: inline;            /*make list inline*/
+    margin: 0;                  /*no margins*/
+    padding: 0;                 /*no padding*/
+    background-color: palegreen;   /*set background to silver*/
+    /*width: 25%;*/
+    flex-basis: 25%
+}
+
+/*horizontal nav box anchor formatting*/
+#horiz-nav ul li a {
+    font-weight: bold;      /*make text bold*/
+    font-size: 125%;        /*make text bigger*/
+    /*display: inline-block;  /*make anchor a block element running horizontal*/
+    /*width: 240px;           /*make the block big enough to span body (960px / 4 blocks = 240px)*/
+    /*width: 20%;*/
+    color: black;           /*make the text black*/
+}
+
+/*horizontal nav box anchor focus formatting*/
+#horiz-nav ul li a:hover {
+    color: white;       /*white text on hover*/
+    background-color: darkgreen;    /*black background on hover*/
+}
+
+/*horizontal nav box anchor focus formatting*/
+#horiz-nav ul li a:focus {
+    color: white;               /*white text on focus*/
+    background-color: black;    /*black background on focus*/
+}
+
+/*vertical nav box unordered list formatting*/
+#vert-nav ul {
+    list-style-type: none;
+    padding-left: 5%;
+}
+
+/*vertical nav box list item formatting*/
+#vert-nav ul li {
+    border: 2px solid black;    /*make a border so it looks like a box*/
+    margin-bottom: 1em;         /*add some space between boxes*/
+    background-color: palegreen;   /*set the background to the box to silver*/
+    width: 98%;
+    min-width: 90px;
+}
+
+/*vertical nav box anchor formatting*/
+#vert-nav ul li a {
+    display: block;             /*set the anchor elements to blocks so entire box is a link*/
+    color: black;               /*make text black*/
+    text-align: center;         /*center align text*/
+    font-weight: bold;          /*make it bold text*/
+    /*padding: 0em .5em 0em .5em; /*add some space to ends*/
+    max-width: 80%;
+}
+
+/*make sure entire box is black on hover/focus*/
+#vert-nav ul li:hover{
+    background-color: black;
+}
+#vert-nav ul li:focus{
+    background-color: black;
+}
+
+/*vertical nav box anchor hover formatting*/
+#vert-nav ul li a:hover {
+    color: white;               /*white text on hover*/
+    background-color: black;    /*black background on hover*/
+}
+
+/*vertical nav box anchor focus formatting*/
+#vert-nav ul li a:focus {
+    color: white;               /*white text on focus*/
+    background-color: black;    /*black background on focus*/
+}
+
+/*set section size and float right*/
+section {
+    /*float: right;*/
+    flex-basis: 73.12%; /*750px/960px - 5%*/
+    order: 2;
+    padding-left: 5%;
+    padding-right: 1%;
+}
+
+
+/*align the headers in header*/
+header h1 h2{
+    text-align: left;
+}
+
+/*add border under header*/
+header {
+    padding: .52%; /*5px / 960px*/
+    border-bottom: 2px solid black;
+}
+
+
+
+/*give the image some space*/
+header img {
+    padding: 1.56%; /*15px / 960px*/
+    float: left;
+    clear: left;
+    max-width: 40%;
+    min-width: 100px;
+}
+
+/*change link color on hover and focus*/
+a:focus, a:hover{
+    color: crimson;
+}
+
+footer {
+    position: relative;                 /*anchor the footer to the body*/
+    min-height: 50px;
+    font-size: 80%;                     /*reduce font size*/
+    text-align: center;                 /*center align*/
+    border-top: 2px solid black;        /*create a border under footer*/
+    border-bottom: 2px;                 /* add a bottom border so it doesn't cover the body border*/
+    border-radius: 0px 0px 20px 20px;   /*round the border*/
+    background-color: antiquewhite;     /*change footer background color*/
+    clear: both;                        /*clear both*/
+}
+
+@media only screen and (max-width: 959px){
+    section h1 {
+        font-size: 135%;
+    }
+    section h2, aside h2 {
+        font-size: 128%;
+    }
+}
+@media only screen and (max-width: 767px) {
+    header img {
+        float: none;
+    }
+    header {
+        text-align: center;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    section {
+        /*float: none;*/
+        width: 95%;
+        order: 1;
+    }
+    aside {
+        /*float: none;*/
+        width: 95%;
+        order:2;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    section ol {
+        width: 95%;
+        padding-bottom: 5%;
+    }
+
+    #vert-nav {
+        padding: 0;
+        margin: 0;
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+    #vert-nav ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    #horiz-nav {
+        display:none;
+    }
+    #mobile_menu {
+        display: block;
+        text-decoration: none;
+        color: black;
+    }
+    .slicknav_menu {
+        background-color: palegreen !important;
+        text-decoration: none !important;
+        color: black !important;
+        font-weight: bold !important;
+        font-size: 125% !important;
+    }
+}
+@media only screen and (max-width: 479px) {
+    body {
+        font-size: 85%;
+    }
+}

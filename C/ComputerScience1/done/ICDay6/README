@@ -1,0 +1,69 @@
+ICDay06 directory 
+
+Info on this directory as well as the
+   subdirectories   CmdLine and ReadEOF   
+   can be found below
+
+
+Sample programs:
+readDemo.c
+ - open a file named myin.dat for reading
+ - read 2 integers from the file & print out
+
+readDemoErr.c
+ - make sure file opens correctly for reading
+
+writeDemo.c
+ - open a file named myout for writing
+ - ask the user for a number
+ - write the number to the file
+
+inclassask.c
+ - ask the user for a filename
+ - open the file
+ - read an integer, N
+ - read the next N lines from the file
+
+
+
+
+
+Directory:   CmdLine
+report.c
+ - nice sample to show how commandline arguments work
+ - argc & argv
+
+write110.c
+ - filename supplied on commandline
+ - open file for writing
+ - write numbers 1 to 10 into the file
+
+in8tclass.c
+ - filename on commandline for reading
+ - first number is number of lines
+ - read that many lines of text
+ - Data Files: inphrase0
+
+
+
+
+
+Directory: ReadEOF
+numread.c
+ - filename on commandline
+ - open files
+ - read and print all numbers in a file
+ - Data Files:   mfile, nfile
+
+wrongread.c
+ - same as numread.c,  but wrong
+
+filelines.c
+ - open file named   inphrase   for reading
+ - reach each line of text using fgets
+
+
+
+   
+
+
